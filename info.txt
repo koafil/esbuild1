@@ -1,0 +1,5 @@
+git init
+npm init -y
+npm install -D esbuild
+
+npm run buid
