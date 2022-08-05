@@ -3,3 +3,7 @@ npm init -y
 npm install -D esbuild
 
 npm run buid
+// -->> commit
+node .\config\build\esbuild-config.js
+npm run build
+
