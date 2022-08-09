@@ -6,4 +6,5 @@ npm run buid
 // -->> commit
 node .\config\build\esbuild-config.js
 npm run build
-
+// -->>
+npm install --save-dev cross-env
