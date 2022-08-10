@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "cross-env MODE=production node ./config/build/esbuild-config.js",
-  "build:dev": "cross-env MODE=development node ./config/build/esbuild-config.js"
+    "build": "cross-env MODE=production node ./config/build/esbuild-config.js",
+    "build:dev": "cross-env MODE=development node ./config/build/esbuild-config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "esbuild": "^0.14.53"
+    "esbuild": "^0.14.53",
+    "esbuild-plugin-vue-next": "^0.1.4"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
   }
 }

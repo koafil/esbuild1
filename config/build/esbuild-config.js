@@ -1,5 +1,6 @@
 const ESBuild = require('esbuild');
 const path = require('path');
+const pluginVue = require('esbuild-plugin-vue-next')
 
 const mode  = process.env.MODE || 'development';
 const isDev = mode === 'development';
@@ -7,8 +8,9 @@ const isProd = mode === 'production'
 
 ESBuild.build({
     outdir: path.resolve(__dirname,'..','..','build'),
-    entryPoints: [path.resolve(__dirname,'..','..','src','index.js')],
+    entryPoints: [path.resolve(__dirname,'..','..','src','main.js')],
     entryNames: 'bundle',
     bundle: true,
-    minify: isProd
+    minify: isProd,
+    plugins: [pluginVue()]
 });
