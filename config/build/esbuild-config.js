@@ -6,7 +6,7 @@ const mode  = process.env.MODE || 'development';
 const isDev = mode === 'development';
 const isProd = mode === 'production'
 
-ESBuild.build({
+module.exports ={
     outdir: path.resolve(__dirname,'..','..','build'),
     entryPoints: [path.resolve(__dirname,'..','..','src','main.js')],
     entryNames: 'bundle',
@@ -14,4 +14,4 @@ ESBuild.build({
     minify: isProd,
     plugins: [pluginVue()],
     sourcemap: isDev
-});
+}

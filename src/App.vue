@@ -33,7 +33,7 @@ export default  {
 }
 .app {
   padding: 20px;
-  background-color: rebeccapurple;
+  background-color: blueviolet;
 }
 button{
   margin: 5px 10px;

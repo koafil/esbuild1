@@ -12,3 +12,5 @@ npm install --save-dev cross-env
 // -->
 npm install vue
 npm install -D esbuild-plugin-vue-next
+// --
+npm start
