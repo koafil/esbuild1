@@ -12,5 +12,6 @@ ESBuild.build({
     entryNames: 'bundle',
     bundle: true,
     minify: isProd,
-    plugins: [pluginVue()]
+    plugins: [pluginVue()],
+    sourcemap: isDev
 });
