@@ -1,7 +1,5 @@
 const ESBuild = require('esbuild');
 const path = require('path');
-const pluginVue = require('esbuild-plugin-vue-next');
-
 const config = require('./esbuild-config');
 
 const PORT = process.env.PORT || 3000;

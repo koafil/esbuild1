@@ -14,3 +14,5 @@ npm install vue
 npm install -D esbuild-plugin-vue-next
 // --
 npm start
+//--
+npm run build
